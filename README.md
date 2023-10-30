@@ -1,25 +1,62 @@
-# project-cement-strength-prediction
+# Project: Cement Strength Prediction
 
-Data Description
+## Overview
 
-Given is the variable name, variable type, the measurement unit and a brief description. The concrete compressive strength is the regression problem. The order of this listing corresponds to the order of numerals along the rows of the database.
+In this project, the goal is to predict the compressive strength of concrete. This is a regression problem, where we aim to estimate the concrete's compressive strength (in MegaPascals - MPa) based on various input variables that describe the components and properties of the concrete mixture.
 
-Name -- Data Type -- Measurement -- Description
+## Data Description
 
-Cement (component 1) -- quantitative -- kg in a m3 mixture -- Input Variable
+The dataset contains the following variables:
 
-Blast Furnace Slag (component 2) -- quantitative -- kg in a m3 mixture -- Input Variable
+1. **Cement (component 1)**
+   - Data Type: Quantitative
+   - Measurement Unit: kg/m^3
+   - Description: The amount of cement in a cubic meter of the concrete mixture.
 
-Fly Ash (component 3) -- quantitative -- kg in a m3 mixture -- Input Variable
+2. **Blast Furnace Slag (component 2)**
+   - Data Type: Quantitative
+   - Measurement Unit: kg/m^3
+   - Description: The amount of blast furnace slag in a cubic meter of the concrete mixture.
 
-Water (component 4) -- quantitative -- kg in a m3 mixture -- Input Variable
+3. **Fly Ash (component 3)**
+   - Data Type: Quantitative
+   - Measurement Unit: kg/m^3
+   - Description: The amount of fly ash in a cubic meter of the concrete mixture.
 
-Superplasticizer (component 5) -- quantitative -- kg in a m3 mixture -- Input Variable
+4. **Water (component 4)**
+   - Data Type: Quantitative
+   - Measurement Unit: kg/m^3
+   - Description: The amount of water in a cubic meter of the concrete mixture.
 
-Coarse Aggregate (component 6) -- quantitative -- kg in a m3 mixture -- Input Variable
+5. **Superplasticizer (component 5)**
+   - Data Type: Quantitative
+   - Measurement Unit: kg/m^3
+   - Description: The amount of superplasticizer in a cubic meter of the concrete mixture.
 
-Fine Aggregate (component 7) -- quantitative -- kg in a m3 mixture -- Input Variable
+6. **Coarse Aggregate (component 6)**
+   - Data Type: Quantitative
+   - Measurement Unit: kg/m^3
+   - Description: The amount of coarse aggregate in a cubic meter of the concrete mixture.
 
-Age -- quantitative -- Day (1~365) -- Input Variable
+7. **Fine Aggregate (component 7)**
+   - Data Type: Quantitative
+   - Measurement Unit: kg/m^3
+   - Description: The amount of fine aggregate in a cubic meter of the concrete mixture.
 
-Concrete compressive strength -- quantitative -- MPa -- Output Variable
+8. **Age**
+   - Data Type: Quantitative
+   - Measurement Unit: Days (ranging from 1 to 365)
+   - Description: The age of the concrete in days when its compressive strength was measured.
+
+9. **Concrete Compressive Strength**
+   - Data Type: Quantitative
+   - Measurement Unit: MPa (MegaPascals)
+   - Description: The target variable we want to predict, which represents the compressive strength of the concrete.
+
+## Objective
+
+The objective of this project is to build a machine learning model that can accurately predict the compressive strength of concrete based on the input variables listed above. Various regression techniques and models will be explored to achieve this goal.
+
+## Data Source
+
+The dataset used for this project is provided here :
